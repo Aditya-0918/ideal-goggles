@@ -75,9 +75,9 @@ print('cr_amt=',row[4])
 if n== 4:
 acct_no=int(input('Enter your account number='))
 print()
-cur.execute('select * from customer_details
-where acct_no='+str(acct_no) )
-ifcur.fetchone() is None:
+cur.execute('select * from customer_details where )
+ acct_no=+str(acct_no) 
+if cur.fetchone() is None:
 print()
 print('Invalid Account number')
 else:

@@ -25,7 +25,7 @@ if n == 1:
 
 if n == 2:
  acct_no=int(input('Enter Your Account Number='))
- cur.execute('select * from customer_details where
+ cur.execute('select * from customer_details where')
  acct_no='+str (acct_no)'
  data=cur.fetchall()
  count=cur.rowcount

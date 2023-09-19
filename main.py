@@ -1,7 +1,7 @@
 import mysql.connector as sql
 conn=sql.connect(host='localhost',user='root',passwd='manager',database='bank')
 cur = conn.cursor()
-cur.execute('"create table user_table(username varchar(25)"');('primarykey, passwrdvarchar')(25) ,not(null)
+cur.execute("create table user_table(username varchar(25)");('primarykey, passwrdvarchar')(25) ,not(null)
 print("1.REGISTER")
 print("2.LOGIN")
 n=int(input('enter your choice='))

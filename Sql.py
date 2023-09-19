@@ -82,8 +82,8 @@ if cur.fetchone() is None:
   print('Invalid Account number')
 
 else:
- cur.execute('select * from transactions where
- acct_no='+str(acct_no) )
+ cur.execute('select * from transactions where')
+ acct_no='+str(acct_no) 
  data=cur.fetchall()
 for row in data:
  print('ACCOUNT NO=',acct_no)
@@ -96,8 +96,8 @@ for row in data:
 if n == 5:
 print('DELETE YOUR ACCOUNT')
 acct_no=int(input('Enter your account number='))
-cur.execute("delete from customer_details where
-acct_no=+str(acct_no)")
+cur.execute("delete from customer_details where")
+acct_no=+str(acct_no)
 print('ACCOUNT DELETED SUCCESFULLY')
 
 if n == 6:
